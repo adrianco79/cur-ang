@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title:string = 'miProyect';
-  nombre:string='Adrian'
-
-
-  recibirMensajedelHijo(evento:string){
-    alert(evento)
-  }
+  title = 'ProyectoFinal';
 }

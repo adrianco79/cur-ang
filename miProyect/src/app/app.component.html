@@ -5,9 +5,9 @@
 <h2> esto es mi componente saludo</h2>
 
 
-<app-saludo nombre="Adrian"> </app-saludo> <!-- le paso un literal directame-->
+<!--  <app-saludo nombre="Adrian"> </app-saludo> le paso un literal directame-->
 
-<app-saludo [nombre]="nombre" > </app-saludo><!-- esta es la forma correcta-->
+<app-saludo [nombre]="nombre" (mensajeEmiter)="recibirMensajedelHijo($event)" > </app-saludo><!-- esta es la forma correcta-->
 
 <!--Input para trabajar con Ngmodel-->
 <input type="text" placeholder="indique nombre de usuario" [(ngModel)]="nombre"/>
