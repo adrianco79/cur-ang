@@ -9,6 +9,7 @@ import { FormularioAnidadoComponent } from './components/form/formulario-anidado
 import { FormularioArrayComponent } from './components/form/formulario-array/formulario-array.component';
 import { FormularioValidadoComponent } from './components/form/formulario-validado/formulario-validado.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     //para trabajar con formularios reactivos
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule
   ],
   providers: [
     provideAnimationsAsync()
